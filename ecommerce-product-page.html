@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Headphones</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <div>
+    <img id="main" src="https://via.placeholder.com/450">
+    <div class="thumbs">
+      <img src="https://via.placeholder.com/450" onclick="swap(this)">
+      <img src="https://via.placeholder.com/450/ff4444" onclick="swap(this)">
+      <img src="https://via.placeholder.com/450/4488ff" onclick="swap(this)">
+    </div>
+  </div>
+
+  <div>
+    <h2>Smart Headphones</h2>
+    <p>Wireless • Noise Cancelling • 40hr Battery</p>
+    <h3>₹<span id="price">2999</span></h3>
+    <label>Qty:
+      <select id="qty" onchange="update()">
+        <option>1</option><option>2</option><option>3</option>
+      </select>
+    </label>
+    <button onclick="cart()">Add to Cart</button>
+    <p id="msg"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
